@@ -19,7 +19,7 @@ spark = SparkSession.builder \
     .getOrCreate()
 
 # Path for the model
-MODEL_PATH = "D:/tugas/smst5/big data/project-big-data/model/models/"
+MODEL_PATH = os.path.join("model", "models")
 
 # Function to load model based on ID
 def load_model(model_name):
